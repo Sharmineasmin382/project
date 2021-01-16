@@ -1,0 +1,285 @@
+*{
+	box-sizing: border-box;
+	margin:1px;
+	padding:0px;
+}
+body{
+	background-color:none;
+	
+}
+.header{
+	width: 100%;
+	height: 50px;
+	background-color: black;
+}
+.header h1{
+	text-align: center;
+	color:white;
+}
+
+.bgimage{
+	background-image: url('tt.jpg');
+	background-size: 100% 110%;
+	width: 100%;
+	height: 100vh;
+	background:rgba(0, 0, 0, 0.7);
+}
+.row{
+	display: flex;
+	width: 100%;
+	height:100px;
+	background-color: rgba(0,0,0,0.5);
+	
+	
+}
+
+.nav-menu{
+	float: left;
+	width: 30%;
+	height: 100px;
+	line-height:100px;	
+     
+}
+
+
+.nav-menu h4{
+    margin-left: 10px;
+	font-weight: bold;
+	color:orange;
+	font-size: 38px;
+	font-family: 'Montserrat', sans-serif;
+}
+.main{
+	            width:70%;
+	            height: 100px;
+	            float: right;
+				font-size: 20px;
+				display: flex;
+               justify-content: center;
+}
+
+.main a{
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+	font-size: 20px;
+	color:white;
+	font-weight: bold;
+	margin-top:50px;
+	line-height: 0px;
+	margin-left: 58px;
+	margin-right: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+
+
+#firstlist{
+	color: orange;
+}
+
+.rightmenu ul li:hover{
+	color: orange;
+}
+
+
+.text{
+	width: 100%;
+	margin-top: 185px;
+	text-transform: uppercase;
+	text-align: center;
+	color:orange;
+	height:400px;
+}
+
+.text h4{
+
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.text h1{
+	font-size:62px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700px;
+	margin:14px 0px;
+}
+
+.text h3{
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+#buttonone{
+	background-color: white;
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 40px;
+	width: 150px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 25px;
+	border:10px solid orange;
+	text-decoration:none;
+}
+
+#buttontwo{
+
+	background-color: transparent;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 40px;
+	border: 3px solid white;
+	width: 150px;
+}
+#buttonone:hover{
+	background-color:orange;
+}
+#buttontwo:hover{
+	background-color:orange;
+}
+.section{
+	
+	display:flex;
+	align-items:center;
+	max-width:80%;
+	justify-content:space-evenly;
+	margin:auto;
+	padding:10px;
+	
+}
+.sectionTag{
+	padding:16px 0px;
+}
+.section-left{
+	flex-direction:row-reverse;
+	
+}
+.paras{
+	padding:0px 65px;
+}
+.contact{
+	background-color:#f6f5f4;
+	height:833px;
+}
+.text-center{
+	text-align:center;
+	padding-top:30px;
+	font-size:35px;
+}
+.form{
+	max-width:42%;
+	margin:25px auto;
+	
+}
+.form-input{
+	margin:30px 0;
+	padding:5px 13px;
+	width:100%;
+	font-size:19px;
+	border:2px solid grey;
+	border-radius:5px;
+	
+}
+.btn-dark{
+	color:grey;
+	border:2px solid grey;
+}
+.text-footer{
+	text-align:center;
+	padding:10px 5px;
+	display:flex;
+	justify-content:center;
+	color:white;
+	font-size:20px;
+	height:auto;
+}
+.thumbnail img{
+	width:300px;
+	height:300px;
+	border:2px solid black;
+	border-radius:25px;
+	margin-top:19px;
+}
+.thumb img{
+	  
+	  width:150px;
+	height:150px;
+	border:2px solid black;
+	border-radius:25px;
+	margin-top:19px;
+	
+}
+.foot img{
+	 width:100px;
+	height:100px;
+	border:2px solid black;
+	border-radius:25px;
+	margin-top:19px;
+	margin-left:33px;
+	
+}
+.text-big{
+	font-size:32px;
+}
+.text-small{
+	font-size:15px;
+	text-align:justify;
+}
+.btn{
+	padding:8px 20px;
+	margin:7px 3px;
+	border:2px solid grey;
+	border-radius:8px;
+	background:white;
+	color:black;
+	cursor:pointer;
+	font-size:20px;
+	
+}
+.btn:hover{
+	background-color:grey;
+}
+.btn-sm{
+	padding:6px 10px;
+	vertical-align:middle;
+	font-size:16px;
+	
+}
+.background{
+	background:rgba(0, 0, 0, 0.7)url('tt.jpg');
+	background-size:cover;
+	background-blend-mode:darken;
+}
+@media only screen and (max-width: 1140px){
+	
+	.section{
+		flex-direction:column-reverse;
+	}
+	.text-small{
+	text-align:center;
+   }
+   .text-big{
+	text-align:center;
+   }
+   .btn{
+	text-align:center;
+   }
+   .paras{
+	   padding:0px;
+   }
+   .background{
+	background:rgba(0, 0, 0, 0.7)url('tt.jpg');
+	background-size:cover;
+	background-blend-mode:darken;
+}
+   
+	
+	
+	
+}
+

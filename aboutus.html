@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+		 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+		  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+
+		  <style>
+			  *{
+				  box-sizing: border-box;
+			  }
+			  
+			  .nav-menu{
+				width: 20%;
+	            line-height: 100px;
+	            float: left;
+                 
+			   }
+			   .main{
+				width:80%;
+	            height:100px;
+	            float: right;
+	            font-size:20px;
+			   }
+			   h2{
+			   text-align:center;
+			   font-size:35px;
+			   }
+			   h1{
+			      text-decoration:none;
+				  text-align:center;
+				  color:red;
+			   }
+			   
+
+
+			   /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	
+	.row{
+		display: flex;
+		flex-direction: column;
+		background-color:black;
+	}
+	[class*="col-"] {
+	width: 100%;
+	height: auto;
+  }
+   h2{
+			   text-align:center;
+			   font-size:35px;
+			   margin-top:180px;
+			   }
+  .main{
+	   flex-direction: column;
+	   width: 100%;
+	   padding:5px;
+	   height:auto;
+	   
+		
+        
+    }
+	.text-small{
+	font-size:15px;
+	text-align:justify;
+}
+	.section{
+		flex-direction:column-reverse;
+		margin-top:190px;
+	}
+  .main a{
+		flex:100%;
+		color:grey;
+		background-color:black;
+        margin:5px 1px;
+		border-radius:10px;
+		padding:12px;
+		text-align: center;
+		height: auto;
+  }
+  .main a:hover{
+       color:orange;
+	   }
+  .nav-menu h4{
+     
+	  margin-left:150px;
+	  color:white;
+  }
+  .text h4{
+    color:white;
+	font-size:24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.text h3{
+     color:white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	height:auto;
+}
+
+
+
+	
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	
+	.row{
+		
+		flex-direction:column;
+		height:auto;
+	}
+	[class*="col-"] {
+	width: 100%;
+	height: auto;
+  }
+  
+  .main{
+	
+	   width: 100%;
+	   padding:10px;
+	   height: auto;
+	   
+		
+        
+    }
+  .main a{
+	    flex:20%;
+		background-color:white;
+		color:black;
+        margin:10px 2px;
+		border:2px solid white;
+		border-radius:10px;
+		padding:15px;
+		text-align: center;
+		height: auto;
+  }
+   .main a:hover{
+       color:orange;
+	   }
+  .nav-menu h4{
+	  margin-left:250px;
+	  color:white;
+  }
+  .text h4{
+    color:white;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.text h3{
+     color:white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	height:auto;
+}
+.text-small{
+	font-size:15px;
+	text-align:justify;
+}
+	
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.bgimage{
+				background-image: url('tt.jpg');
+	            background-size: 100% 110%;
+	            width: 100%;
+				height: auto;
+	}
+	.row{
+		
+		flex-direction: column;
+	}
+	[class*="col-"] {
+	width: 100%;
+	height: auto;
+  }
+  .main{
+	   width: 100%;
+	   padding:10px;
+	   height: auto;
+	   
+		
+        
+    }
+  .main a{
+	    flex:50%;
+		background-color:black;
+		color:white;
+        margin:5px 10px;
+		border-radius:10px;
+		padding: 20px;
+		text-align: center;
+		height: auto;
+  }
+   .main a:hover{
+       color:orange;
+	   }
+  .nav-menu h4{
+	  margin-left:300px;
+	  color:white;
+  }
+  .text h4{
+    color:white;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.text h3{
+     color:white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	height:auto;
+}
+.text-small{
+	font-size:15px;
+	text-align:justify;
+}
+	
+
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.bgimage{
+				background-image: url('tt.jpg');
+	            background-size: 100% 110%;
+	            width: 100%;
+				height: auto;
+	}
+	.row{
+		flex-direction: column;
+	}
+	[class*="col-"] {
+	width: 100%;
+	height: auto;
+  }
+  .main{
+	
+	   width: 100%;
+	   padding:5px;
+	   height: auto;
+	   
+		
+        
+    }
+  .main a{
+	    flex:20%;
+        margin:10px 2px;
+		padding:20px;
+		text-align: center;
+		border:1px solid black;
+		border-radius:35px;
+		height: auto;
+		background-color:white;
+		color:black;
+  }
+   .main a:hover{
+       color:orange;
+	   }
+  .nav-menu h4{
+	  margin-left:400px;
+	  justify-content:center;
+	  color:white;
+  }
+   .text h4{
+    color:white;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.text h3{
+     color:white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	height:auto;
+}
+.text-small{
+	font-size:15px;
+	text-align:justify;
+}
+	
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.bgimage{
+				background-image: url('tt.jpg');
+	            background-size: 100% 110%;
+	            width: 100%;
+				height: auto;
+				
+	}
+	[class*="col-"] {
+	width: 100%;
+	height: auto;
+  }
+  .row{
+	  display: inline-block;
+	  background-color:black;
+	  position:sticky;
+	  top:0;
+	  cursor:pointer;
+	  transform: all 0.3s ease-out;
+	  
+  }
+  .main{
+	   width: 70%;
+	   padding:10px;
+	   margin-left:80px;
+	   height: auto;	
+        
+    }
+   .main a{
+        color:white;
+		background-color:black;
+		flex:20%;
+	   margin-top:30px;
+	   line-height: 1px;
+	   margin-left:30px;
+	   margin-right:0px;
+	   padding:15px;
+	   border-radius:10px;
+	   font-size: 24px;
+	   text-transform: uppercase;
+	   height: auto;
+  }
+  .main a:hover{
+       color:white;
+	   background-color:grey;
+	   }
+  .nav-menu h4{
+	  margin-left:20px;
+	  color:white;
+	  
+  }
+   .text h4{
+    color:white;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.text h3{
+     color:white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	height:auto;
+}
+.text-small{
+	font-size:15px;
+	text-align:justify;
+}
+
+
+	
+
+
+
+
+} 
+		  </style>
+</head>
+<body>
+
+	     
+		<div class="row">
+			<div class="nav-menu">
+				<h4>Elearning</h4>
+			</div>
+
+			<div class="main">
+				
+					<a href="index.html">Home</a>
+					<a href="aboutus.html">About</a>
+					<a href="sign up form.html">Register</a>
+					<a href="table.html">program</a>
+					<a href="support.html">support</a>
+					
+				
+			</div>
+
+		</div><br>
+		
+
+		
+		
+		<h2><u>About us</u></h2>
+		 <section class="section">
+	     <div class="paras">
+	    <p class="sectionTag text-big">The end of your search if here</p>
+		<p class="sectionsubTag text-small">Education is the process of facilitating learning, or the acquisition of knowledge,
+		skills, values, morals, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion 
+		and directed research. Education frequently takes place under the guidance of educators, however learners can also ed
+		ucate themselves. Education can take place in formal or informal settings and any experience that has a formative effe
+		ct on the way one thinks,Education is the process of facilitating learning, or the acquisition of knowledge,
+		skills, values, morals, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion 
+		feels, or acts may be considered educational. The methodology of teaching is called pedagogy.
+         Education is the process of facilitating learning, or the acquisition of knowledge,
+		skills, values, morals, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion 
+		Education is the process of facilitating learning, or the acquisition of knowledge,
+		skills, values, morals, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion 
+		</p>
+		</div>
+		<div class="thumbnail">
+		    <img src="about.jpg" alt="laptop image" class="imageFluid">
+		  
+		
+		</div>
+	  </section>
+	  <section class=" section section-left">
+	     <div class="paras">
+	    <p class="sectionTag text-big">Transforming Education In Bangladesh</p>
+		<p class="sectionsubTag text-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+		took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+		but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+		with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+		software
+		like Aldus PageMaker including versions of Lorem Ipsum.
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+		when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+		It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+		with desktop 
+		publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+		<div class="thumbnail">
+		    <img src="aboutt.jpg" alt="laptop image" class="imageFluid">
+		  
+		
+		</div>
+	  </section>
+	  <section class="section">
+	     <div class="paras">
+	    <p class="sectionTag text-big">Lets Grow Together</p>
+		<p class="sectionsubTag text-small"> Education began in prehistory, as adults trained the young in the knowledge and skills
+		deemed necessary in their society. In pre-literate societies, this was achieved orally and through imitation. Story-telling
+		passed knowledge, values, and skills from one generation to the next.
+		As cultures began to extend their knowledge beyond skills that could be readily learned through imitation, formal education
+		developed. Schools existed in Egypt at the time of the Middle Kingdom.[2]
+             Matteo Ricci (left) and Xu Guangqi (right) in the Chinese edition of Euclid's Elements published in 1607</p>
+			 <p class="sectionsubTag text-small">
+
+         Plato founded the Academy in Athens, the first institution of higher learning in Europe.[3] The city of Alexandria in Egypt, 
+    established in 330 BCE, became the successor to Athens as the intellectual cradle of Ancient Greece. There, the great Library 
+     of Alexandria was built in the 3rd century BCE. European civilizations suffered a collapse of literacy and organization following
+      the fall of Rome in CE 476.[4] </p>
+		</div>
+		<div class="thumbnail">
+		    <img src="pexels-pixabay-267507.jpg" alt="laptop image" class="imageFluid">
+		  
+		
+		</div>
+	  </section>
+	  <hr>
+	  <h1><u>Administrator</u></h1>
+	  <section class="section">
+	     <div class="paras">
+	    <p class="sectionTag text-big">Prof Dr.Md.AKM</p>
+		<p class="sectionsubTag text-small"> 
+		  
+		  Board member, Bangladesh safety authority<br>
+		  Nominated by the sindicate
+		  
+		</p>
+			 
+		</div>
+		<div class="thumb">
+		    <img src="one.jpg" alt="laptop image" class="imageFluid">
+		  
+		
+		</div>
+		
+	  </section>
+	  <br><br>
+	  <section class="section">
+	     <div class="paras">
+	    <p class="sectionTag text-big">Prof Dr.Md.UPC</p>
+		<p class="sectionsubTag text-small"> 
+		  
+		 Board member, Bangladesh safety authority<br>
+		  Nominated by the sindicate
+		  
+		</p>
+			 
+		</div>
+		<div class="thumb">
+		    <img src="two.jpg" alt="laptop image" class="imageFluid">
+		  
+		
+		</div>
+		
+	  </section>
+	  <br><br>
+	  <section class="section">
+	     <div class="paras">
+	    <p class="sectionTag text-big">Prof Dr.Md.SKN</p>
+		<p class="sectionsubTag text-small"> 
+		  
+		  Board member, Bangladesh safety authority<br>
+		  Nominated by the sindicate
+		</p>
+			 
+		</div>
+		<div class="thumb">
+		    <img src="three.jpg" alt="laptop image" class="imageFluid">
+		  
+		
+		</div>
+		
+	  </section>
+	  <br><br>
+	  <section class="section">
+	     <div class="paras">
+	    <p class="sectionTag text-big">Prof Dr.Md.MRK</p>
+		<p class="sectionsubTag text-small"> 
+		  
+		 Board member, Bangladesh safety authority<br>
+		  Nominated by the sindicate
+		  
+		</p>
+			 
+		</div>
+		<div class="thumb">
+		    <img src="four.jpg" alt="laptop image" class="imageFluid">
+		  
+		
+		</div>
+		
+	  </section>
+	  <footer class="background">
+	  <p class="text-footer">
+	  
+	   copyright &copy;2027 www.iedu.com- All rights reserved
+	  </p>
+	  </footer>
+	  
+	  
+	  
+			
+		
+
+	
+
+</body>
+</html>

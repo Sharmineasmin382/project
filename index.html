@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+		 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+		  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+
+		  <style>
+			  *{
+				  box-sizing: border-box;
+			  }
+			  .bgimage{
+				background-image: url('tt.jpg');
+	            background-size: 100% 110%;
+	            width: 100%;
+	            height:100vh;
+			  }
+			  .nav-menu{
+				width: 20%;
+	            line-height: 100px;
+	            float: left;
+                 
+			   }
+			   .main{
+				width:80%;
+	            height: 100px;
+	            float: right;
+	            font-size:15px;
+			   }
+			   .footer{
+			    height:200px;
+		   border:3px solid grey;
+		   border-radius:5px;
+		
+	
+}
+.footer-left{
+    flex-basis: 35%;
+}
+.footer-middle{
+    flex-basis: 30%;
+
+}
+.footer-right{
+    flex-basis: 35%;
+}
+	
+.Text{
+    left: 5%;
+    right: 20%;
+    position: absolute;
+}
+.Text h1{
+    color:white;
+    font-size: 25px;
+}
+.Text h2{
+    color:white;
+
+    font-size: 20px;
+}
+.para{
+    left: 35%;
+    right: 40%;
+    position: absolute;
+}
+.para h1{
+    color:white;
+    font-size:25px;
+}
+.para h3{
+    color:white;
+    font-size: 20px;
+}
+
+.para h2{
+    color:white;
+    
+    font-size: 20px;
+}
+.para3{
+    left: 75%;
+    right: 2%;
+    position: absolute;
+
+}
+.para3 h1{
+    color:white;
+    font-size: 25px;
+
+}
+.para3 h2{
+    color: white;
+    font-size: 20px;
+
+}
+.para3 h3{
+    color: white;
+    font-size: 20px;
+}	
+			  
+
+
+			   /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.bgimage{
+				background-image: url('tt.jpg');
+	            background-size: 100% 110%;
+	            width: 100%;
+				height: auto;
+	}
+	.row{
+		display: flex;
+		flex-direction: column;
+	}
+	[class*="col-"] {
+	width: 100%;
+	height: auto;
+  }
+  .text-small{
+	font-size:15px;
+	text-align:justify;
+}
+  .main{
+	   flex-direction: column;
+	   width: 100%;
+	   padding:5px;
+	   height:auto;
+	   
+		
+        
+    }
+  .main a{
+		flex:100%;
+		color:grey;
+		background-color:white;
+        margin:5px 1px;
+		border-radius:10px;
+		padding:12px;
+		text-align: center;
+		height: auto;
+  }
+  .main a:hover{
+       color:orange;
+	   }
+  .nav-menu h4{
+     
+	  margin-left:150px;
+	  color:white;
+  }
+  .text h4{
+    color:white;
+	font-size:24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.text h3{
+     color:white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	height:auto;
+}
+.para h3{
+    color: white;
+    font-size: 20px;
+}	
+	
+
+.footer{
+          
+        height:500px;
+        background:blue;
+		border:3px solid grey;
+		
+		
+}
+.foot img{
+	 width:100px;
+	height:100px;
+	border:2px solid black;
+	border-radius:25px;
+	margin-top:19px;
+	margin-left:8px;
+	
+}
+
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.bgimage{
+				background-image: url('tt.jpg');
+	            background-size: 100% 110%;
+	            width: 100%;
+				height: auto;
+	}
+	.row{
+		
+		flex-direction: column;
+	}
+	[class*="col-"] {
+	width: 100%;
+	height: auto;
+  }
+  .main{
+	
+	   width: 100%;
+	   padding:10px;
+	   height: auto;
+	   
+		
+        
+    }
+  .main a{
+	    flex:20%;
+		background-color:white;
+		color:black;
+        margin:10px 2px;
+		border:2px solid white;
+		border-radius:10px;
+		padding:15px;
+		text-align: center;
+		height: auto;
+  }
+   .main a:hover{
+       color:orange;
+	   }
+  .nav-menu h4{
+	  margin-left:250px;
+	  color:white;
+  }
+  .text h4{
+    color:white;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.text h3{
+     color:white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	height:auto;
+}
+ .footer{
+          height:450px;
+        background:black;
+		border:3px solid grey;
+}
+.foot img{
+	 width:100px;
+	height:100px;
+	border:2px solid black;
+	border-radius:25px;
+	margin-top:19px;
+	margin-left:5px;
+	
+}
+.para3 h1{
+    color:white;
+    font-size: 25px;
+	margin-right:8px;
+
+}
+.para3 h2{
+    color: white;
+    font-size: 20px;
+	margin-right:8px;
+
+}
+	
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.bgimage{
+				background-image: url('tt.jpg');
+	            background-size: 100% 110%;
+	            width: 100%;
+				height: auto;
+	}
+	.row{
+		
+		flex-direction: column;
+	}
+	[class*="col-"] {
+	width: 100%;
+	height: auto;
+  }
+  .main{
+	   width: 100%;
+	   padding:10px;
+	   height: auto;
+	   
+		
+        
+    }
+  .main a{
+	    flex:50%;
+		background-color:white;
+		color:black;
+         margin:5px 10px;
+		border-radius:10px;
+		padding: 20px;
+		text-align: center;
+		height: auto;
+  }
+   .main a:hover{
+       color:orange;
+	   }
+  .nav-menu h4{
+	  margin-left:300px;
+	  color:white;
+  }
+  .text h4{
+    color:white;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.text h3{
+     color:white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	height:auto;
+}
+.footer{
+          
+        height:400px;
+        background:black;
+		border:3px solid grey;
+		
+		
+}
+	
+
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.bgimage{
+				background-image: url('tt.jpg');
+	            background-size: 100% 110%;
+	            width: 100%;
+				height: auto;
+	}
+	.row{
+		flex-direction: column;
+	}
+	[class*="col-"] {
+	width: 100%;
+	height: auto;
+  }
+  .main{
+	
+	   width: 100%;
+	   padding:5px;
+	   height: auto;
+	   
+		
+        
+    }
+  .main a{
+	     flex:20%;
+        margin:10px 2px;
+		padding:20px;
+		text-align: center;
+		border:1px solid white;
+		border-radius:35px;
+		height: auto;
+		color:black;
+  }
+   .main a:hover{
+       color:orange;
+	   }
+  .nav-menu h4{
+	  margin-left:400px;
+	  justify-content:center;
+	  color:white;
+  }
+   .text h4{
+    color:white;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.text h3{
+     color:white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	height:auto;
+}
+	
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.bgimage{
+				background-image: url('tt.jpg');
+	            background-size: 100% 110%;
+	            width: 100%;
+				height: auto;
+				
+	}
+	[class*="col-"] {
+	width: 100%;
+	height: auto;
+  }
+  .row{
+	  display: inline-block;
+	  background-color:white;
+	  
+	  
+  }
+  .main{
+	   width: 70%;
+	   padding:10px;
+	   margin-left:80px;
+	   height: auto;	
+        
+    }
+   .main a{
+        color:black;
+		flex:20%;
+	   margin-top:30px;
+	   line-height: 1px;
+	   margin-left:30px;
+	   margin-right:0px;
+	   padding:15px;
+	   border-radius:10px;
+	   font-size: 20px;
+	   text-transform: uppercase;
+	   height: auto;
+  }
+  .main a:hover{
+       color:white;
+	   background-color:grey;
+	   }
+  .nav-menu h4{
+	  margin-left:20px;
+	  color:black;
+  }
+   .text h4{
+    color:white;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.text h3{
+     color:white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	height:auto;
+}
+ .footer{
+          height:400px;
+		  color:white;
+        background:black;
+		border:25px solid white;
+		
+		
+}
+.para3 h1{
+    color:white;
+    font-size: 25px;
+	margin-right:10px;
+
+}
+.para3 h2{
+    color: white;
+    font-size: 20px;
+	margin-right:10px;
+
+}
+	
+	
+
+
+
+
+} 
+		  </style>
+</head>
+<body>
+
+	<div class="bgimage">
+		<div class="row">
+			<div class="nav-menu">
+				<h4>Elearning</h4>
+			</div>
+
+			<div class="main">
+				
+					<a href="index.html">Home</a>
+					<a href="aboutus.html">About</a>
+					<a href="sign up form.html">Register</a>
+					<a href="table.html">program</a>
+					<a href="support.html">Support</a>
+					
+				
+			</div>
+
+		</div>
+
+		<div class="text">
+		   
+			<h4> DESIGN • DEVELOPMENT • BRANDING </h4><br>
+			<h3> CREATIVE & EXPERIENCED </h3><br>
+			<h3> WE ARE THE ONE OF THE WORLD’S TOP CREATIVE DESIGN AGENCIES </h3>
+			<div class="buttons">
+			<a href="login.php"><button class="btn">Log in</button></a>
+		
+		
+		
+		</div>
+			
+	
+		</div>
+		</div>
+		 <section class="section">
+	     <div class="paras">
+	    <p class="sectionTag text-big">The end of your search if here</p>
+		<p class="sectionsubTag text-small">Education is the process of facilitating learning, or the acquisition of knowledge,
+		skills, values, morals, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion 
+		and directed research. Education frequently takes place under the guidance of educators, however learners can also ed
+		ucate themselves. Education can take place in formal or informal settings and any experience that has a formative effe
+		ct on the way one thinks,feels, or acts may be considered educational. The methodology of teaching is called pedagogy.
+		feels, or acts may be considered educational. The methodology of teaching is called pedagogy.feels, or acts may be considered educational. 
+		The methodology of teaching is called pedagogy.feels, or acts may be considered educational. The methodology of teaching is called pedagogy.
+		feels, or acts may be considered educational. The methodology of teaching is called pedagogy.
+		feels, or acts may be considered educational. The methodology of teaching is called pedagogy.
+		feels, or acts may be considered educational. The methodology of teaching is called pedagogy.
+		</p>
+		</div>
+		<div class="thumbnail">
+		    <img src="java.jpg" alt="laptop image" class="imageFluid">
+		  
+		
+		</div>
+	  </section>
+	  <section class=" section section-left">
+	     <div class="paras">
+	    <p class="sectionTag text-big">Transforming Education In Bangladesh</p>
+		<p class="sectionsubTag text-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+		took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+		but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+		with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+		software
+		like Aldus PageMaker including versions of Lorem Ipsum.
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+		when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+		It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+		with desktop 
+		publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+		<div class="thumbnail">
+		    <img src="pic.jpg" alt="laptop image" class="imageFluid">
+		  
+		
+		</div>
+	  </section>
+	  <section class="section">
+	     <div class="paras">
+	    <p class="sectionTag text-big">Lets Grow Together</p>
+		<p class="sectionsubTag text-small"> Education began in prehistory, as adults trained the young in the knowledge and skills
+		deemed necessary in their society. In pre-literate societies, this was achieved orally and through imitation. Story-telling
+		passed knowledge, values, and skills from one generation to the next.
+		As cultures began to extend their knowledge beyond skills that could be readily learned through imitation, formal education
+		developed. Schools existed in Egypt at the time of the Middle Kingdom.[2]
+             Matteo Ricci (left) and Xu Guangqi (right) in the Chinese edition of Euclid's Elements published in 1607</p>
+			 <p class="sectionsubTag text-small">
+
+         Plato founded the Academy in Athens, the first institution of higher learning in Europe.[3] The city of Alexandria in Egypt, 
+    established in 330 BCE, became the successor to Athens as the intellectual cradle of Ancient Greece. There, the great Library 
+     of Alexandria was built in the 3rd century BCE. European civilizations suffered a collapse of literacy and organization following
+	 Plato founded the Academy in Athens, the first institution of higher learning in Europe.[3] The city of Alexandria in Egypt, 
+    established in 330 BCE, became the successor to Athens as the intellectual cradle of Ancient Greece. There
+	Plato founded the Academy in Athens, the first institution of higher learning in Europe.[3] The city of Alexandria in Egypt, 
+    established in 330 BCE, became the successor to Athens as the intellectual cradle of Ancient Greece. There
+      the fall of Rome in CE 476.[4] </p>
+		</div>
+		<div class="thumbnail">
+		    <img src="third.jpg" alt="laptop image" class="imageFluid">
+		  
+		
+		</div>
+	  </section>
+	  
+	  
+	  <section class="contact" id="contact">
+	    <h2 class="text-center">contact us</h2>
+		<div class="form">
+		<input class="form-input" type="text" name="name" id="name" placeholder="Enter your name" required>
+		<input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your phone" required>
+		<input class="form-input" type="email" name="email" id="name" placeholder="Enter your email" required>
+		<textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Ellaborate your concern" required></textarea>
+		<button class="btn btn-sm btn-dark">Submit</button>
+		</div>
+	  </section>
+	  
+	  
+	  <div class="footer">
+	  <div class="footer-left">
+            <div class="Text">
+            </br>
+                <h1>LIKE US</h1></br>
+                <h2>About Us</h2>
+                <h2>Terms </h2>
+                <h2>Privacy</h2>
+            </div>
+
+        </div>
+		<div class="footer-middle">
+            <div class="para">
+            </br>
+                <h1>GET HELP </h1></br>
+				<div class="foot">
+		    <img src="logo.jpg" alt="laptop image" class="imageFluid">
+		  
+		
+		</div>
+                
+                <h2><i>a mission with a vision</i></h2><br>
+				<h3>A.K avenue,Bangladesh</h3><br>
+				<h2>Elearning.edu.bd</h2>
+                
+                
+            </div>
+
+        </div>
+        <div class="footer-right">
+            <div class="para3">
+            </br>
+                <h1>STUDY HERE NOW is on your smart phone now.</h1></br>
+                <h2>@2021 study now here</h2>
+                
+                
+            </div>
+
+        </div>
+    </div>
+			
+		
+
+	
+
+</body>
+</html>

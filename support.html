@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+		 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+		  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+
+		  <style>
+			  *{
+				  box-sizing: border-box;
+			  }
+			  
+			  .nav-menu{
+				width: 20%;
+	            line-height: 100px;
+	            float: left;
+                 
+			   }
+			   .main{
+				width:80%;
+	            height:100px;
+	            float: right;
+	            font-size:20px;
+			   }
+			   h2{
+			   text-align:center;
+			   font-size:35px;
+			   }
+			  
+
+
+			   /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	
+	.row{
+		display: flex;
+		flex-direction: column;
+	}
+	[class*="col-"] {
+	width: 100%;
+	height: auto;
+  }
+   h2{
+			   text-align:center;
+			   font-size:35px;
+			   margin-top:180px;
+			   }
+  .main{
+	   flex-direction: column;
+	   width: 100%;
+	   padding:5px;
+	   height:auto;
+	   
+		
+        
+    }
+	.section{
+		flex-direction:column-reverse;
+		margin-top:190px;
+	}
+  .main a{
+		flex:100%;
+		color:grey;
+		background-color:black;
+        margin:5px 1px;
+		border-radius:10px;
+		padding:12px;
+		text-align: center;
+		height: auto;
+  }
+  .main a:hover{
+       color:orange;
+	   }
+  .nav-menu h4{
+     
+	  margin-left:150px;
+	  color:white;
+  }
+  .text h4{
+    color:white;
+	font-size:24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.text h3{
+     color:white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	height:auto;
+}
+
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	
+	.row{
+		
+		flex-direction:column;
+		height:auto;
+	}
+	[class*="col-"] {
+	width: 100%;
+	height: auto;
+  }
+  
+  .main{
+	
+	   width: 100%;
+	   padding:10px;
+	   height: auto;
+	   
+		
+        
+    }
+  .main a{
+	    flex:20%;
+		background-color:white;
+		color:black;
+        margin:10px 2px;
+		border:2px solid white;
+		border-radius:10px;
+		padding:15px;
+		text-align: center;
+		height: auto;
+  }
+   .main a:hover{
+       color:orange;
+	   }
+  .nav-menu h4{
+	  margin-left:250px;
+	  color:white;
+  }
+  .text h4{
+    color:white;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.text h3{
+     color:white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	height:auto;
+}
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.bgimage{
+				background-image: url('tt.jpg');
+	            background-size: 100% 110%;
+	            width: 100%;
+				height: auto;
+	}
+	.row{
+		
+		flex-direction: column;
+	}
+	[class*="col-"] {
+	width: 100%;
+	height: auto;
+  }
+  .main{
+	   width: 100%;
+	   padding:10px;
+	   height: auto;
+	   
+		
+        
+    }
+  .main a{
+	    flex:50%;
+		background-color:white;
+		color:black;
+         margin:5px 10px;
+		border-radius:10px;
+		padding: 20px;
+		text-align: center;
+		height: auto;
+  }
+   .main a:hover{
+       color:orange;
+	   }
+  .nav-menu h4{
+	  margin-left:300px;
+	  color:white;
+  }
+  .text h4{
+    color:white;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.text h3{
+     color:white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	height:auto;
+}
+
+	
+
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.bgimage{
+				background-image: url('tt.jpg');
+	            background-size: 100% 110%;
+	            width: 100%;
+				height: auto;
+	}
+	.row{
+		flex-direction: column;
+	}
+	[class*="col-"] {
+	width: 100%;
+	height: auto;
+  }
+  .main{
+	
+	   width: 100%;
+	   padding:5px;
+	   height: auto;
+	   
+		
+        
+    }
+  .main a{
+	     flex:20%;
+        margin:10px 2px;
+		padding:20px;
+		text-align: center;
+		border:1px solid white;
+		border-radius:35px;
+		height: auto;
+		color:black;
+  }
+   .main a:hover{
+       color:orange;
+	   }
+  .nav-menu h4{
+	  margin-left:400px;
+	  justify-content:center;
+	  color:white;
+  }
+   .text h4{
+    color:white;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.text h3{
+     color:white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	height:auto;
+}
+
+	
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.bgimage{
+				background-image: url('tt.jpg');
+	            background-size: 100% 110%;
+	            width: 100%;
+				height: auto;
+				
+	}
+	[class*="col-"] {
+	width: 100%;
+	height: auto;
+  }
+  .row{
+	  display: inline-block;
+	  background-color:white;
+	  position:sticky;
+	  top:0;
+	  cursor:pointer;
+	  transform: all 0.3s ease-out;
+	  
+  }
+  .main{
+	   width: 70%;
+	   padding:10px;
+	   margin-left:80px;
+	   height: auto;	
+        
+    }
+   .main a{
+        color:black;
+		flex:20%;
+	   margin-top:30px;
+	   line-height: 1px;
+	   margin-left:30px;
+	   margin-right:0px;
+	   padding:15px;
+	   border-radius:10px;
+	   font-size: 24px;
+	   text-transform: uppercase;
+	   height: auto;
+  }
+  .main a:hover{
+       color:white;
+	   background-color:grey;
+	   }
+  .nav-menu h4{
+	  margin-left:20px;
+	  color:black;
+  }
+   .text h4{
+    color:white;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.text h3{
+     color:white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	height:auto;
+}
+
+
+
+
+
+} 
+		  </style>
+</head>
+<body>
+
+	     
+		<div class="row">
+			<div class="nav-menu">
+				<h4>Elearning</h4>
+			</div>
+
+			<div class="main">
+				
+					<a href="index.html">Home</a>
+					<a href="aboutus.html">About</a>
+					<a href="sign up form.html">Register</a>
+					<a href="table.html">program</a>
+					<a href="support.html">support</a>
+					
+				
+			</div>
+
+		</div><br>
+		
+
+		
+		
+		
+		 
+	  <section class=" section section-left">
+	  <div class="thumbnail">
+		    <img src="pic.jpg" alt="laptop image" class="imageFluid">
+		  
+		
+		</div>
+	     <div class="paras">
+	    <p class="sectionTag text-big">Support</p>
+		<p class="sectionsubTag text-small">
+		<li>Network Solutions & Support.</li>
+		<li>Software Development & Support.</li>
+		<li>Web Design.</li>
+		<li>Web Development</li>
+		<li>Domain Registration & Management.</li>
+		<li>Web Hosting Solutions.</li>
+		<li>Search Engine Optimization (SEO).</li>
+		<li>Business Process Outsourcing (BPO).</li>
+		<li>Online Services.</li>
+		<li>Google Apps & Office 365 Administration, Support.</li>
+		<li>FTP & Control Panel Administration.</li>
+		</p>
+		</div>
+		
+	  </section>
+	  <section class="section">
+	     <div class="paras">
+	    <p class="sectionTag text-big">SPECIALIZED</p>
+		<p class="sectionsubTag text-small">
+		<li>Website Development.</li>
+		<li>Mobile App Deveploment.</li>
+		<li>Search Engine Optimization.</li>
+		<li>Graphic & Logo Design</li>
+		<li>Social Media Marketing.</li>
+		<li>E-Commerce Solution.</li>
+		<li>Software Development.</li>
+		<li>Network Solution.</li>
+		
+		</p>
+			 
+		</div>
+		
+	  </section>
+	  
+	  
+	  <footer class="background">
+	  <p class="text-footer">
+	  
+	   copyright &copy;2027 www.iedu.com- All rights reserved
+	  </p>
+	  </footer>
+			
+		
+
+	
+
+</body>
+</html>
